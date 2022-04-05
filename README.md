@@ -119,3 +119,27 @@ Dönen parametreleri, değerleri ve dahasını, assert ile kontrol edebilirsiniz
         // something bad happens
     }
     ```
+
+
+- **List**
+    Liste oluşturmada yine Java'daki List kütüphanesini olduğu gibi kullanabiliyor. Tabi bunun daha yalın yine groovy hali de mevcut. Bu kısım opsiyonel çünkü Java'dan bildiğimiz listemiz yine sorunsuz çalışıyor. Detaylara ve daha fazla syntax bilgisini groovy'nin kendi dökümantasyonundan da ulaşabilirsiniz. (Bkz. http://groovy-lang.org/syntax.html#_lists). Şimdi Groovy'de liste tanımlamaya bakalım.
+
+    ```
+    def karisik = [1, "a", true]  
+    
+    
+    def letters = ['a', 'b', 'c', 'd']
+    
+    yeni item eklemek için
+    letters << 'e'   
+    
+    ---
+    erişmek için
+    assert letters[ 4] == 'e' 
+
+    assert letters[-1] == 'e'
+
+    letters[2] = 'C'             
+    assert letters[2] == 'C'
+    
+    ```
